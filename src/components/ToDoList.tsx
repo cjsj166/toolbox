@@ -67,7 +67,7 @@ function itemsReducer(items: Item[], action: ItemsActionType) {
         case 'itemCreate':
             newItem = { priority: 1, text: action.text }
             // Making a room for newItem. add 1 to all items priority
-            if (copyItems != []) {
+            if (copyItems !== []) {
                 copyItems = copyItems.map((item) => {
                     return { ...item, priority: item.priority + 1 }
                 })

@@ -9,13 +9,13 @@ type DisplayProps = {
 
 export const Display = ({selectedIcon} : DisplayProps) => {
     
-    if(selectedIcon == Icon.ToDoList){
+    if(selectedIcon === Icon.ToDoList){
         return <div><ToDoList/></div>
     }
-    else if(selectedIcon == Icon.Timer) {
+    else if(selectedIcon === Icon.Timer) {
         return <div><Timer/></div>
     }
-    else if(selectedIcon == Icon.Canvas) {
+    else if(selectedIcon === Icon.Canvas) {
         return <div><Canvas/></div>
     }
     else{

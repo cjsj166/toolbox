@@ -6,15 +6,15 @@ type IconsProps = {
     setIcon : React.Dispatch<React.SetStateAction<Icon | null>>
 }
 
-export const Icons = ({icon, setIcon} : IconsProps) => {
+const defaultStyle : React.CSSProperties = {
+    backgroundColor: 'white',
+    color: 'black',
+    border: '2px solid gray',
+    fontSize: '24px',
+    padding: '20px 60px'
+}
 
-    const defaultStyle : React.CSSProperties = {
-        backgroundColor: 'white',
-        color: 'black',
-        border: '2px solid gray',
-        fontSize: '24px',
-        padding: '20px 60px'
-    }
+export const Icons = ({icon, setIcon} : IconsProps) => {
 
     const [toDoListStyle, setToDoListStyle] = useState(defaultStyle)
     const [timerStyle, setTimerStyle ] = useState(defaultStyle)
